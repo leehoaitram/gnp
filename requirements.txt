@@ -10,7 +10,7 @@ cloudpickle==3.0.0
 contextlib2==21.6.0
 decorator==5.1.1
 dm-tree==0.1.8
-etils==1.8.0
+etils==1.9.4
 flatbuffers==24.3.25
 flax==0.8.4
 fsspec==2024.5.0
@@ -28,7 +28,7 @@ jax-cuda12-pjrt==0.4.28
 jax-cuda12-plugin==0.4.28
 jax-models==0.0.5
 jaxlib==0.4.28
-keras==2.12.0
+keras==2.13.1
 libclang==18.1.1
 Markdown==3.6
 markdown-it-py==3.0.0
@@ -38,7 +38,7 @@ ml-collections==0.1.0
 ml-dtypes==0.4.0
 msgpack==1.0.8
 nest-asyncio==1.6.0
-numpy==1.26.4
+numpy==1.24.1
 nvidia-cublas-cu12==12.5.2.13
 nvidia-cuda-cupti-cu12==12.5.39
 nvidia-cuda-nvcc-cu12==12.5.40
@@ -56,7 +56,7 @@ optax==0.2.2
 orbax-checkpoint==0.5.14
 packaging==24.0
 promise==2.3
-protobuf==4.25.3
+protobuf==3.20.3
 psutil==5.9.8
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
@@ -68,12 +68,12 @@ rich==13.7.1
 rsa==4.9
 scipy==1.13.1
 six==1.16.0
-tensorboard==2.12.3
+tensorboard==2.13.0
 tensorboard-data-server==0.7.2
 tensorflow==2.12.0
 tensorflow-addons==0.23.0
 tensorflow-datasets==4.9.4
-tensorflow-estimator==2.12.0
+tensorflow-estimator==2.13.0
 tensorflow-io-gcs-filesystem==0.37.0
 tensorflow-metadata==1.15.0
 tensorflow-probability==0.20.0
@@ -83,7 +83,7 @@ toml==0.10.2
 toolz==0.12.1
 tqdm==4.66.4
 typeguard==2.13.3
-typing_extensions==4.12.0
+typing_extensions==4.5.0
 urllib3==2.2.1
 Werkzeug==3.0.3
 wrapt==1.14.1
