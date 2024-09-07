@@ -18,7 +18,7 @@
 
 from absl import flags
 from absl import app
-from ml_collections.config_flags import config_flags
+from ml-collections.config_flags import config_flags
 import jax
 import tensorflow as tf
 from gnp.main import util
