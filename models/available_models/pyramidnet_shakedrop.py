@@ -248,7 +248,7 @@ class PyramidNetShakeDrop(nn.Module):
             layer_mask_prob = _calc_shakedrop_mask_prob(layer_num, total_blocks,
                                                   self.mask_prob)
             x = BottleneckShakeDropBlock(channels = int(round(num_channels)), strides = (1, 1),
-                        prob = layer_mask_prob, alpha_min = alpha_min, alpha_max = alpha_max,
+                        mask_prob = layer_mask_prob, alpha_min = alpha_min, alpha_max = alpha_max,
                         beta_min = beta_min, beta_max = beta_max)(x, train = train, true_gradient = true_gradient)
             layer_num += 1
 
@@ -258,7 +258,7 @@ class PyramidNetShakeDrop(nn.Module):
                                                   self.mask_prob)
             x = BottleneckShakeDropBlock(channels = int(round(num_channels)),
                          strides = (2, 2) if block_i == 0 else (1, 1),
-                        prob = layer_mask_prob, alpha_min = alpha_min, alpha_max = alpha_max,
+                        mask_prob = layer_mask_prob, alpha_min = alpha_min, alpha_max = alpha_max,
                         beta_min = beta_min, beta_max = beta_max)(x, train = train, true_gradient = true_gradient)
             layer_num += 1
 
@@ -268,7 +268,7 @@ class PyramidNetShakeDrop(nn.Module):
                                                   self.mask_prob)
             x = BottleneckShakeDropBlock(channels = int(round(num_channels)),
                          strides = (2, 2) if block_i == 0 else (1, 1),
-                        prob = layer_mask_prob, alpha_min = alpha_min, alpha_max = alpha_max,
+                        mask_prob = layer_mask_prob, alpha_min = alpha_min, alpha_max = alpha_max,
                         beta_min = beta_min, beta_max = beta_max)(x, train = train, true_gradient = true_gradient)
             layer_num += 1
 
